@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    font-size: 1.2em;
 }
 
 .container {
@@ -57,12 +58,15 @@ header ul.menu li a:hover {
     background-color: #2e3ea9;
 }
 
+h1 {
+    margin-bottom: -1rem;
+}
 /* Main content */
 main {
     background-color: rgb(138, 186, 254);
     padding: 2rem 0;
     text-align: left;
-    min-height: 100ch;
+    min-height: 60ch;
 }
 
 main .content {
@@ -76,7 +80,8 @@ main .content {
 
 main .content h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
+    margin-top: 3rem;
 }
 
 main .content p {
@@ -89,6 +94,10 @@ main .content img {
     height: auto;
     display: block; 
     margin: 1rem auto; 
+}
+
+ul {
+    margin-bottom: 2rem;
 }
 
 /* Footer */
