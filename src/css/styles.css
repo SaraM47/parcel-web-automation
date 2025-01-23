@@ -49,6 +49,7 @@ header ul.menu li a {
     color: #fff;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding: 1rem;
 }
 
 header ul.menu li a:hover {
@@ -61,6 +62,7 @@ main {
     background-color: rgb(138, 186, 254);
     padding: 2rem 0;
     text-align: left;
+    min-height: 100ch;
 }
 
 main .content {
@@ -79,6 +81,14 @@ main .content h2 {
 
 main .content p {
     line-height: 1.6;
+}
+
+main .content img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    display: block; 
+    margin: 1rem auto; 
 }
 
 /* Footer */
