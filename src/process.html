@@ -29,18 +29,19 @@
             <p>
                 Webbplatsen är utvecklad med hjälp av Node.js och Parcel som automatiseringsverktyg. Följande process har använts:
             </p>
-            <h3>Steg för steg-process</h3>
+            <h2>Steg för steg-process</h2>
             <ol>
                 <li>En ny katalog skapades för projektet med <code>mkdir web-automation && cd web-automation</code>.</li>
                 <li>Ett nytt Node.js-projekt initierades med <code>npm init -y</code>.</li>
                 <li>Parcel installerades som utvecklingsberoende med <code>npm install parcel --save-dev</code>.</li>
                 <li>Projektets filstruktur skapades, inkluderande mappar för <code>src/</code>, <code>css/</code>, <code>js/</code> och <code>images/</code>.</li>
                 <li>En <code>.gitignore</code>-fil skapades för att ignorera <code>node_modules/</code> och <code>package-lock.json</code>.</li>
+                <li>För att säkerställa att webbplatsen fungerar på så många webbläsare som möjligt, har jag lagt till <code>browserslist</code>-fältet i <code>package.json</code>. Detta fält definierar vilka webbläsare Parcel ska optimera och transpilera koden för.</li>
                 <li>Parcel startades för att utveckla webbplatsen med <code>npm run start</code>.</li>
                 <li>När webbplatsen var klar byggdes den optimerade versionen med <code>npm run build</code>.</li>
             </ol>
         
-            <h3>Filstruktur</h3>
+            <h2>Filstruktur</h2>
             <p>Projektet har följande filstruktur:</p>
             <ul>
                 <li><strong>src/</strong>: Innehåller alla utvecklingsfiler.</li>
