@@ -98,6 +98,10 @@ main .content img {
   margin: 1rem auto;
 }
 
+img {
+    image-orientation: from-image;
+}
+
 ul {
   line-height: 1.6em;
   margin-bottom: 2rem;
