@@ -29,8 +29,57 @@
             <p>
                 Webbplatsen är utvecklad med hjälp av Node.js och Parcel som automatiseringsverktyg. Följande process har använts:
             </p>
-            
+            <h3>Steg för steg-process</h3>
+            <ol>
+                <li>En ny katalog skapades för projektet med <code>mkdir web-automation && cd web-automation</code>.</li>
+                <li>Ett nytt Node.js-projekt initierades med <code>npm init -y</code>.</li>
+                <li>Parcel installerades som utvecklingsberoende med <code>npm install parcel --save-dev</code>.</li>
+                <li>Projektets filstruktur skapades, inkluderande mappar för <code>src/</code>, <code>css/</code>, <code>js/</code> och <code>images/</code>.</li>
+                <li>En <code>.gitignore</code>-fil skapades för att ignorera <code>node_modules/</code> och <code>package-lock.json</code>.</li>
+                <li>Parcel startades för att utveckla webbplatsen med <code>npm run start</code>.</li>
+                <li>När webbplatsen var klar byggdes den optimerade versionen med <code>npm run build</code>.</li>
+            </ol>
+        
+            <h3>Filstruktur</h3>
+            <p>Projektet har följande filstruktur:</p>
+            <ul>
+                <li><strong>src/</strong>: Innehåller alla utvecklingsfiler.</li>
+                <li><strong>images/</strong>: För lagring av bilder.</li>
+                <li><strong>css/</strong>: För stilmallar (ex. <code>style.css</code>).</li>
+                <li><strong>js/</strong>: För JavaScript-filer (ex. <code>script.js</code>).</li>
+                <li><strong>index.html</strong>: Huvudfilen för webbplatsens struktur.</li>
+                <li><strong>.gitignore</strong>: Ignorerar oönskade filer i versionshanteringen.</li>
+                <li><strong>package.json</strong>: Hanterar beroenden och scripts.</li>
+            </ul>
+        
+            <h2>Automatisering</h2>
+            <p>
+                Automatisering implementerades för att förenkla utvecklingsprocessen:
+            </p>
+            <ul>
+                <li>Minifiering av CSS, HTML och JavaScript.</li>
+                <li>Optimering av bilder till moderna format som WebP.</li>
+                <li>Automatisk kopiering av optimerade filer till publiceringsmappen.</li>
+            </ul>
+        
+            <h2>Publicering</h2>
+            <p>
+                Publicering hanterades med Git och GitHub. Jag har använt två separata branches för att hålla processen organiserad. 
+                <strong>Development-branch</strong> användes under utveckling och testning av nya funktioner, medan <strong>Main-branch</strong> användes för att hantera publicering av den färdiga versionen. En <code>main</code>-branch används för publicering, och varje commit triggar en automatisk byggprocess via Parcel. Netlify används för att automatiskt bygga och publicera webbplatsen vid varje uppdatering i <code>main</code>.
+            </p>
+        
+            <h2>Verktyg</h2>
+            <p>
+                Följande verktyg användes i projektet:
+            </p>
+            <ul>
+                <li><strong>Node.js:</strong> Hantering av beroenden och scripts.</li>
+                <li><strong>Parcel:</strong> Automatiseringsverktyg för utveckling och produktion.</li>
+                <li><strong>Git och GitHub:</strong> Versionshantering och publicering.</li>
+                <li><strong>HTML, CSS och JavaScript:</strong> För att skapa strukturen och designen av webbplatsen.</li>
+            </ul>
         </section>
+        
     </main>
     <footer>
         <p>Moment 1 - Automatisering & publicering - 2025</p>
